@@ -269,7 +269,7 @@ function ENT:Explode()
 
 	--;; Расскажу вам тайну но у нас трассировка делалась просто ужасно
 	local dis = self.BlastDis / 0.01905
-	local disorientation_dis = 6 / 0.01905  
+	local disorientation_dis = 10 / 0.01905
 	local entsCount = 0
 	for i, enta in ipairs(ents.FindInSphere(selfPos, disorientation_dis)) do
 		local tracePos = enta:IsPlayer() and (enta:GetPos() + enta:OBBCenter()) or enta:GetPos()

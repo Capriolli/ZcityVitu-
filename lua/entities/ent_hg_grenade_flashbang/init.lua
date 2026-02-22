@@ -10,7 +10,7 @@ end
 
 local burnDamageRadius = 20
 local explosionDamageRadius = 30
-local disorientationRadius = 300
+local disorientationRadius = 600
 function ENT:Explode()
     if self:PoopBomb() then
         self:EmitSound("weapons/p99/slideback.wav", 75)
